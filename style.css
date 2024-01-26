@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-image: url(./images/purple\ back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #410963;
+    text-align: center;
+    font-size: 2.6em;
+
+}
+
+.control-div {
+    margin-top: 4em;
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+
+
+}
+
+.first-div {
+    background-color: rgba(161, 82, 236, 0.644);
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23em;
+    height: 20em;
+    border: 0.2em solid white;
+    box-shadow: 0.5em 0.5em 1em rgb(121, 7, 192);
+}
+
+
+.second-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.effect,
+#start,
+#reset {
+    background-color: rgb(149, 93, 201);
+    color: white;
+    border: 1px solid white;
+    border-radius: 1em;
+    font-size: 1.5em;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.effect:hover,
+#start:hover,
+#reset:hover {
+    background-color: rgb(107, 65, 146);
+}
+
+#time {
+    margin: 0.1em;
+    font-size: 5em;
+    color: #ffffff;
+}
+
+button {
+    margin: 1em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button.effect:focus {
+    outline: none;
+}
+
+.setting-div {
+    width: 30em;
+    background-color: gray;
+}
+
+hr {
+    color: white;
+}
+
+@media screen and (max-width:461px) {
+    .main-div {
+        margin-top: 3em;
+    }
+
+}
+
+@media screen and (max-width:357px) {
+    .first-div {
+        min-width: 100%;
+        max-width: 19vw;
+    }
+
+    .effect {
+        font-size: 1.1em;
+    }
+
+    .main-div {
+        margin-top: 3em;
+    }
+
+}
